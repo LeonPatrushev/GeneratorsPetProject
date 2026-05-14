@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    volumes:
+      - ./data:/app/data:ro
+    command: php bin/report.php
